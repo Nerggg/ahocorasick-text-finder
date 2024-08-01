@@ -10,9 +10,8 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <TextField fx:id="debugging" />
 
     <Label fx:id="welcomeText" />
     <Button onAction="#onHelloButtonClick" text="Hello!" />
-<!--   <Button onAction="#onLoadButtonClick" text="Load" />-->
+    <Button onAction="#onLoadButtonClick" text="Load" />
 </VBox>

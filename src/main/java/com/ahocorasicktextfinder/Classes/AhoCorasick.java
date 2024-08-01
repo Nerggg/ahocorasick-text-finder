@@ -3,7 +3,7 @@ package com.ahocorasicktextfinder.Classes;
 import java.util.*;
 
 public class AhoCorasick {
-    private static final int ALPHABET_SIZE = 128; // Size of ASCII table
+    private static final int ALPHABET_SIZE = 128;
 
     static class TrieNode {
         TrieNode[] children = new TrieNode[ALPHABET_SIZE];
@@ -17,12 +17,10 @@ public class AhoCorasick {
         root = new TrieNode();
     }
 
-    // Convert character to index (using ASCII values directly)
     private int charToIndex(char c) {
         return (int) c;
     }
 
-    // Add pattern to the trie
     public void addPattern(String pattern, int index) {
         TrieNode current = root;
         for (char c : pattern.toCharArray()) {
@@ -35,7 +33,6 @@ public class AhoCorasick {
         current.output.add(index);
     }
 
-    // Build failure links
     public void buildFailureLinks() {
         Queue<TrieNode> queue = new LinkedList<>();
         for (int i = 0; i < ALPHABET_SIZE; i++) {
@@ -63,7 +60,6 @@ public class AhoCorasick {
         }
     }
 
-    // Search patterns in text and return a map with pattern count and their indices
     public Map<String, List<Integer>> search(String text, String[] patterns) {
         Map<String, List<Integer>> patternOccurrences = new HashMap<>();
         for (String pattern : patterns) {
@@ -122,20 +118,3 @@ public class AhoCorasick {
         return temp;
     }
 }
-
-//    public static String result(String text, String[] patterns) {
-//        String temp = "";
-//        AhoCorasick ac = new AhoCorasick();
-//        for (int i = 0; i < patterns.length; i++) {
-//            ac.addPattern(patterns[i], i);
-//        }
-//
-//        ac.buildFailureLinks();
-//        Map<String, List<Integer>> result = ac.search(text, patterns);
-//
-//        for (String pattern : patterns) {
-//            List<Integer> occurrences = result.get(pattern);
-//            temp += ("Pattern '" + pattern + "' occurs " + occurrences.size() + " times at indices " + occurrences + "\n");
-//        }
-//        return temp;
-//    }
