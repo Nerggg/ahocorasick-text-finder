@@ -1,7 +1,7 @@
 package com.ahocorasicktextfinder.Controller;
 
-import com.ahocorasicktextfinder.Classes.TextPattern;
 import com.ahocorasicktextfinder.Classes.AhoCorasick;
+import com.ahocorasicktextfinder.Classes.TextPattern;
 import com.google.gson.Gson;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,29 +14,23 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
 
-public class HelloController {
+public class MainController {
 
     private TextPattern textPattern;
 
     @FXML
-    private Label welcomeText;
+    private Label resultLabel;
 
     @FXML
-    protected void onHelloButtonClick() {
-        AhoCorasick tes = new AhoCorasick();
-//        String arr[] = { "he", "she", "hers", "his" };
-//        String text = "ahishers";
-        String arr[] = { "saya", "ayam" };
-        String text = "saya sangat suka matkul irk. saya jadi ingin makan ayam.";
-//        text = text.replaceAll("[.\\s]", "");
-//        int k = arr.length;
-//
-//        searchWords(arr, k, text);
-//        welcomeText.setText("Welcome to JavaFX Application!");
-//        welcomeText.setText(searchWords(arr, k, text));
-        welcomeText.setText(AhoCorasick.result(text, arr));
+    private TextField textField;
+
+    @FXML
+    private TextField patternField;
+
+    @FXML
+    protected void onSearchButtonClick() {
+        resultLabel.setText(AhoCorasick.result(textField.getText(), patternField.getText().split(",")));
     }
 
     @FXML
@@ -55,13 +49,13 @@ public class HelloController {
                 for (int i = 0; i < patterns.length; i++) {
                     temp = temp + patterns[i] + "\n";
                 }
-//                welcomeText.setText(textPattern.getPattern());
-                welcomeText.setText(temp);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
 
-        welcomeText.setText(AhoCorasick.result(textPattern.getText(), textPattern.getPattern()));
+        textField.setText(textPattern.getText());
+        patternField.setText(String.join(",", textPattern.getPattern()));
+        resultLabel.setText(AhoCorasick.result(textPattern.getText(), textPattern.getPattern()));
     }
 }

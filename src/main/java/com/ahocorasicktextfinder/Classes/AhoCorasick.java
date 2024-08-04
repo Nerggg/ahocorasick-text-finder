@@ -83,24 +83,6 @@ public class AhoCorasick {
         return patternOccurrences;
     }
 
-    public static void main(String[] args) {
-        String text = "ab.c ab.ab.c";
-        String[] patterns = {"ab", "ab.", "bc", ".c"};
-
-        AhoCorasick ac = new AhoCorasick();
-        for (int i = 0; i < patterns.length; i++) {
-            ac.addPattern(patterns[i], i);
-        }
-
-        ac.buildFailureLinks();
-        Map<String, List<Integer>> result = ac.search(text, patterns);
-
-        for (String pattern : patterns) {
-            List<Integer> occurrences = result.get(pattern);
-            System.out.println("Pattern '" + pattern + "' occurs " + occurrences.size() + " times at indices " + occurrences);
-        }
-    }
-
     public static String result(String text, String[] patterns) {
         String temp = "";
         AhoCorasick ac = new AhoCorasick();
