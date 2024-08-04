@@ -3,16 +3,16 @@
     <output-path>$PROJECT_DIR$/out/artifacts/ahocorasick_text_finder_jar</output-path>
     <root id="archive" name="ahocorasick-text-finder.jar">
       <element id="module-output" name="ahocorasick-text-finder" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/22-ea+11/javafx-fxml-22-ea+11-win.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/22-ea+11/javafx-graphics-22-ea+11.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/22-ea+11/javafx-controls-22-ea+11.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/22-ea+11/javafx-base-22-ea+11.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/22-ea+11/javafx-base-22-ea+11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/22-ea+11/javafx-controls-22-ea+11-win.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/22-ea+11/javafx-graphics-22-ea+11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/22-ea+11/javafx-base-22-ea+11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/22-ea+11/javafx-base-22-ea+11-win.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/22-ea+11/javafx-fxml-22-ea+11.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/22-ea+11/javafx-controls-22-ea+11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/22-ea+11/javafx-graphics-22-ea+11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/22-ea+11/javafx-fxml-22-ea+11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/22-ea+11/javafx-controls-22-ea+11.jar" path-in-jar="/" />
       <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/bin/api-ms-win-core-console-l1-1-0.dll" />
       <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/bin/api-ms-win-core-console-l1-2-0.dll" />
       <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/bin/api-ms-win-core-datetime-l1-1-0.dll" />

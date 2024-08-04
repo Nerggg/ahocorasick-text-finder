@@ -84,6 +84,10 @@ public class AhoCorasick {
     }
 
     public static String result(String text, String[] patterns) {
+        text = text.toLowerCase();
+        for (int i = 0; i < patterns.length; i++) {
+            patterns[i] = patterns[i].toLowerCase();
+        }
         String temp = "";
         AhoCorasick ac = new AhoCorasick();
         for (int i = 0; i < patterns.length; i++) {
